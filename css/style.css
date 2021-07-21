@@ -1,0 +1,1256 @@
+/* Add here all your css Fonts styles (customizations) */
+/*Copyright (c) 2011, Pablo Impallari (www.impallari.com|impallari@gmail.com), Copyright (c) 2011, Igino Marini. (www.ikern.com|mail@iginomarini.com), with Reserved Font Name Kaushan Script.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+
+—————————————————————————————-
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+—————————————————————————————-
+*/
+/*
+Copyright 2010 The Josefin Sans Project Authors (https://github.com/ThomasJockin/JosefinSansFont-master), with Reserved Font Name "Josefin Sans".
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+
+—————————————————————————————-
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+—————————————————————————————-
+*/
+
+
+/*
+
+FOnt colors
+brown : #3B1606;
+white : #ffffff;
+banner gray text : #fdfdfd;
+*/
+@font-face {
+    font-family: 'KaushanScriptRegular';
+    src: url('../fonts/KaushanScriptRegular.eot');
+    src: url('../fonts/KaushanScriptRegular.eot') format('embedded-opentype'),
+         url('../fonts/KaushanScriptRegular.woff2') format('woff2'),
+         url('../fonts/KaushanScriptRegular.woff') format('woff'),
+         url('../fonts/KaushanScriptRegular.ttf') format('truetype'),
+         url('../fonts/KaushanScriptRegular.svg#KaushanScriptRegular') format('svg');
+}
+@font-face {
+	 font-family: 'JosefinSansVariableFont';
+    src: url('../fonts/JosefinSansVariableFont.eot');
+    src: url('../fonts/JosefinSansVariableFont.eot') format('embedded-opentype'),
+         url('../fonts/JosefinSansVariableFont.woff2') format('woff2'),
+         url('../fonts/JosefinSansVariableFont.woff') format('woff'),
+         url('../fonts/JosefinSansVariableFont.ttf') format('truetype'),
+         url('../fonts/JosefinSansVariableFont.svg#JosefinSansVariableFont') format('svg');
+}
+@font-face {
+    font-family: 'JosefinSansVariableFont_semibold';
+    src: url('../fonts/JosefinSansVariableFont_semibold.eot');
+    src: url('../fonts/JosefinSansVariableFont_semibold.eot') format('embedded-opentype'),
+         url('../fonts/JosefinSansVariableFont_semibold.woff2') format('woff2'),
+         url('../fonts/JosefinSansVariableFont_semibold.woff') format('woff'),
+         url('../fonts/JosefinSansVariableFont_semibold.ttf') format('truetype'),
+         url('../fonts/JosefinSansVariableFont_semibold.svg#JosefinSansVariableFont_semibold') format('svg');
+}
+
+
+
+/* ---- Generelized css rules  ---- */
+html,body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	/*scroll-behavior: smooth;*/
+}
+
+.scrolltop {
+	display:none;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	bottom:20px;
+	right:10px;	
+}
+.scroll {
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	background:#b2b2b2;
+	background:rgba(210,210,210,0.7);
+	padding: 12px 15px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	    border-radius: 50%;
+	    width: 50px;
+	    height: 50px;
+}
+.scroll:hover {
+	background:rgba(250,250,250,1.0);
+    box-shadow: 0px 0px 15px #22222294;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover .fa {
+	padding-top:-10px;
+}
+.scroll .fa {
+	font-size:30px;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+body{
+	font-family: 'JosefinSansVariableFont';
+	color: #2d2d2d;
+}
+a{
+	color: #3B1606;
+	text-decoration: none;
+}
+a:hover,
+a:focus{
+	color: #000;
+	text-decoration: none;
+}
+.btn:hover,
+.btn:focus{
+	-webkit-transition: all 1100ms ease;
+    -moz-transition: all 1100ms ease;
+    -ms-transition: all 1100ms ease;
+    -o-transition: all 1100ms ease;
+    transition: all 1100ms ease;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.p-none{
+	padding: 0 !important;
+}
+.p-t-none{
+	padding-top: 0 !important;
+}
+.p-b-none{
+	padding-bottom: 0 !important;
+}
+.p-r-none{
+	padding-right: 0 !important;
+}
+.p-l-none{
+	padding-left: 0 !important; 
+}
+.m-none{
+	margin: 0 !important;
+}
+.m-t-none{
+	margin-top: 0 !important;
+}
+.m-b-none{
+	margin-bottom: 0 !important;
+}
+.m-r-none{
+	margin-right: 0 !important;
+}
+.m-l-none{
+	margin-left: 0 !important;
+}
+.f-bold{
+	font-weight: bold;
+}
+
+/* --------------------------------- */
+/* -------   CUSTOM CSS   -------- */
+/* --------------------------------- */
+.header-banner-section{
+    position: relative;
+    background: #ccc;
+    background-image: linear-gradient(rgba(22,22,22, .5) 0%, rgb(24 24 24  / 50%) 100%), url(../images/bg1.jpg);
+	/* Full height */
+	height: 100%; 
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.topbar {	
+    float: left;
+    width: 100%;
+    padding: 10px 60px;
+    background: rgb(0 0 0 / 10%);
+    font-weight: 600;
+    font-size: 15px;
+    color: #f2f2f2;
+}
+.topbar p{
+	margin: 0;
+}
+.topbar p span{
+	display: inline-block;
+	vertical-align: baseline;
+	margin: 0 10px;
+}
+.topbar p a{
+	display: inline-block;
+	color: #f2f2f2;
+	-webkit-transition: color .35s ease-out;
+	-moz-transition: color .35s ease-out;
+	-o-transition: color .35s ease-out;
+	transition: color .35s ease-out;
+}
+.topbar p a:hover{
+	color: #ccc;
+}
+.topbar p a>i{
+	vertical-align: text-bottom;
+}
+.header-title{
+	float: left;
+    /* position: absolute; */
+    /* top: 40px; */
+    /* left: 60px; */
+    width: Calc(100% - 120px);
+    border-bottom: 1px solid #fdfdfd;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 0px 60px;
+}
+.header-title a{
+    font-size: 28px;
+    color: #fdfdfd;
+    font-family: 'KaushanScriptRegular';
+}
+
+.banner-container-fixed{
+	position: absolute;
+	top: 45%;
+	left: 0;
+	right: 0;
+}
+.banner-title{
+	color: #fff;
+	font-size: 84px;
+    font-family: 'KaushanScriptRegular';
+}
+.banner-container-fixed p.content{
+	font-size: 28px;
+    font-family: 'JosefinSansVariableFont_semibold';
+    font-weight: 600;
+    margin: 30px 0px 0px;
+    color: #fdfdfd;
+    letter-spacing: 1px;
+}
+.banner-container-fixed a.banner_button{
+	border: 1px solid #fdfdfd;
+	border-radius: 0;
+    padding: 10px 20px 8px;
+    font-size: 22px;
+    color: #fdfdfd;
+    display: block;
+    font-weight: 600;
+    width: 200px;
+    margin: 65px auto 0;
+    background-color: transparent;
+	-webkit-transition: background-color .35s ease-out;
+	-moz-transition: background-color .35s ease-out;
+	-o-transition: background-color .35s ease-out;
+	transition: background-color .35s ease-out;
+}
+.banner-container-fixed a.banner_button:hover,
+.banner-container-fixed a.banner_button:focus{
+    background-color: #fdfdfd;
+    color: #000;
+}
+.gray-bg{
+	background: #f6f6f6;
+}
+.section-wrapper{
+	position: relative;
+	padding: 90px 0px;
+	text-align: center;
+}
+.section-title{
+	color: #3B1606;
+    font-size: 42px;
+    font-family: 'KaushanScriptRegular';
+    margin: 0 0 65px;
+}
+.section-title > span.title-underline{
+	height: 2px;
+    width: 65px;
+    background: rgb(59 22 6 / 51%);
+    display: block;
+    margin: 18px auto 0;
+}
+p.section-content{
+	font-size: 20px;
+    font-family: 'JosefinSansVariableFont_semibold';
+    font-weight: 600;
+    margin: 0px auto 20px;
+}
+.decorate-line{
+	width: 175px;
+	margin:75px auto 20px; 
+}
+
+.category-box{
+	position: relative;
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin: 30px auto;
+	overflow: hidden;
+	background: #000;
+	max-height: 490px;
+}
+
+.category-box figcaption {
+	padding: 30px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.category-box figcaption::before,
+.category-box figcaption::after {
+	pointer-events: none;
+	position: absolute;
+	content: '';
+	opacity: 0;
+}
+
+.category-box figcaption::before {
+	top: 25px;
+	right: 10px;
+	bottom: 25px;
+	left: 10px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+
+}
+
+.category-box figcaption::after {
+	top: 10px;
+	right: 25px;
+	bottom: 10px;
+	left: 25px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+	-webkit-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+.category-box:hover figcaption::before,
+.category-box:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.category-box figcaption .art-title {
+	margin: 30px auto 0;
+	padding: 20px 0px;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	 font-family: 'KaushanScriptRegular';
+	color: #f2f2f2;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 600;
+	opacity: 1;
+	-webkit-transform: translate3d(0,100px,0);
+    transform: translate3d(0,100px,0);
+}
+
+.category-box figcaption .art-detail {
+	padding: 10px 20px;
+	text-transform: none;
+	opacity: 0;
+	font-family: "JosefinSansVariableFont_semibold";
+	font-weight: 600;
+	font-size: 18px;
+	color: #fff;
+	-webkit-transform: translate3d(0,50px,0);
+	transform: translate3d(0,50px,0);
+}
+.category-box img.artwork-img{
+	position: relative;
+    display: block;
+    /* min-height: 100%; */
+    max-width: 100%;
+    opacity: .6;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transform-origin: center;
+}
+.category-box:hover img.artwork-img {
+	opacity: 0.3;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.category-box figcaption::before,
+.category-box figcaption::after,
+.category-box img.artwork-img,
+.category-box p.art-detail,
+.category-box p.art-title{
+	-webkit-transition: opacity .35s, -webkit-transform 0.35s;
+	transition: opacity .35s, transform 0.35s;
+}
+
+.category-box:hover .art-title,
+.category-box:hover .art-detail {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/* Gallery CSS  */
+.photo-box{
+	position: relative;
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin: 30px auto;
+	overflow: hidden;
+	/*cursor: pointer;*/
+	background: #000;
+}
+
+.photo-box figcaption {
+	position: absolute;
+    top: auto;
+    width: 100%;
+    bottom: 0;
+    padding: 15px 0px;
+    /*height: 45px;*/
+    background: #fff;
+    color: #3c4a50;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+}
+
+.photo-box img.artwork-img{
+	position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 1;
+	-webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+.photo-box:hover img.artwork-img {
+	opacity: 0.4;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.photo-box .art-title {
+	float: left;
+	margin: 0;
+	padding-left: 15px;
+	font-family: "KaushanScriptRegular";
+	font-size: 20px;
+	text-align: left;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+}
+.photo-box .art-title span{
+	text-align: left;
+	font-size: 14px;
+	display: block;
+	margin-top: 7px;
+	font-family: "JosefinSansVariableFont_semibold";
+    font-weight: 600;
+}
+.photo-box .description {
+	position: absolute;
+    bottom: 60px;
+    text-align: left;
+    padding: 10px 15px;
+    font-family: "JosefinSansVariableFont_semibold";
+    font-weight: 600;
+    color: #fff;
+    text-transform: none;
+    font-size: 18px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+    -webkit-backface-visibility: hidden;
+}
+.photo-box:hover figcaption,
+.photo-box:hover .art-title{
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.photo-box:hover .art-title {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+.photo-box:hover .description {
+	opacity: 1;
+}
+
+.photo-box > a,
+.category-box > a{
+	display: block;
+}
+
+/* artist css */
+.artist-box{
+	position: relative;
+	text-align: center;
+	position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.artist-box img{
+	max-width: 65%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.artist-box .artist-name{
+	font-size: 26px;
+	font-weight: 600;
+	margin: 20px 0;
+}
+.artist-box .artist-name a{
+	color: #3B1606;
+	padding-bottom: 5px;
+	border-bottom: 1px solid transparent;
+	-webkit-transition: border-color 0.35s ease-in;
+	-moz-transition: border-color 0.35s ease-in;
+	-o-transition: border-color 0.35s ease-in;
+	transition: border-color 0.35s ease-in;
+}
+.artist-box .artist-name a:hover{
+	border-color: #3B1606;
+}
+.artist-box .artist-content{
+	font-size: 17px;
+	font-weight: 600;
+	color: #5d5d5d;
+	padding: 10px 15px;
+	min-height: 120px;
+	margin: 0;
+}
+.artist-social{
+	position: relative;
+	margin: 20px 0px;
+}
+.artist-social span{
+	display: block;
+    height: 1px;
+    background: #dadada;
+    width: 75%;
+    margin: 10px auto 20px;
+}
+.artist-social a.social-icon{
+	font-size: 24px;
+    color: #3b1606;
+    display: inline-block;
+    margin: 0 10px;
+    opacity: .3;
+    -webkit-transition: opacity 0.3s ease-in;
+	-moz-transition: opacity 0.3s ease-in;
+	-o-transition: opacity 0.3s ease-in;
+	transition: opacity 0.3s ease-in;
+}
+.artist-social a.social-icon.instagram{
+	color: #8a2bc5;
+}
+.artist-social a.social-icon.whatsapp{
+	color: #45af1a;
+}
+.artist-social a.social-icon.facebook{
+	color: #2e6b9e;
+}
+.artist-social a.social-icon.mail{
+	color: #821414;
+}
+.artist-social a.social-icon.link{
+	color: #676767;
+}
+.artist-social a.social-icon:hover{
+	opacity: 1;
+}
+.artist-social a.social-icon i{
+	/*transition: transform 1.2s linear;
+	transform-origin: center;
+	transform-style: preserve-3D;*/
+	-webkit-transition: -webkit-transform 0.35s ease-in;
+	transition: transform 0.35s ease-in;
+}
+.artist-social a.social-icon:hover i{
+	/*transform: rotate(360deg);*/
+	-webkit-transform: translate3d(0,-2px,0);
+	transform: translate3d(0,-2px,0);
+}
+
+/* team css */
+.team-box{
+	position: relative;
+	text-align: center;
+	position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 70px;
+}
+.team-box img{
+	max-width: 65%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.team-box .team-name{
+	font-size: 22px;
+	font-weight: 600;
+	margin: 15px 0 5px;
+	color: #3B1606;
+}
+.team-box .team-content{
+	font-size: 16px;
+	font-weight: 600;
+	color: #5d5d5d;
+}
+
+.quote-box{
+	position: relative;
+	text-align: center;
+	padding: 0 42px;
+}
+.quote-box .quote{
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	margin: 0;
+}
+.quote-box .quote .author{
+	font-size: 18px;
+	display: block;
+	margin: 15px auto;
+}
+.quote-box .decorate-line{
+	margin: 50px auto 30px;
+}
+.quote-box.owener-quote{
+	padding-top: 120px;
+}
+.quote-box.owener-quote .quote{
+	font-size: 17px;
+	text-align: left;
+}
+.quote-box.owener-quote .quote .author{
+	font-size: 15px;
+	text-align: left;
+}
+
+.form-container,.whatsapp-container{
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.form-container h3{
+	font-weight: 600;
+	font-size: 26px;
+	margin: 0 auto 30px;
+	text-align: center;
+}
+.whatsapp-container, .contact-from,.other-contact{
+    max-width: 770px;
+    margin: 0 auto;
+}
+.contact-from{
+	position: relative;
+    width: 100%;
+}
+.contact-from .form-group{
+	margin: 0;
+}
+.contact-from .form-control{
+	font-size: 18px;color: #3b1606;
+    border: 1px solid rgb(59 22 6 / 60%);
+    border-radius: 0px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding: 12px 12px 10px;
+    height: auto;
+    background: transparent;
+    box-shadow: none;    
+}
+.contact-from textarea.form-control{
+	resize: none;
+	height: 142px;
+}
+.form-btn-light{
+	border: 1px solid #3B1606;
+	border-radius: 0;
+    padding: 10px 15px 6px;
+    font-size: 22px;
+    color: #3B1606;
+    display: block;
+    font-weight: 600;
+    width: 176px;
+    margin: 45px auto 0;
+    background-color: transparent;
+    -webkit-transition: background-color .35s ease-out;
+    -moz-transition: background-color .35s ease-out;
+    -o-transition: background-color .35s ease-out;
+    transition: background-color .35s ease-out;
+}
+.form-btn-light:hover,
+.form-btn-light:focus{
+    background-color: #3B1606;
+    color: #f2f2f2;
+}
+.form-container small{
+	font-size: 16px;
+    margin: 20px auto;
+    display: block;
+    font-weight: 600;
+}
+.form-container .decorate-line{
+ margin: 50px auto;
+}
+.whatsapp-container h3{
+	    margin: 30px auto;
+    font-size: 28px;
+    font-weight: 600;
+    color: #3B1606;
+}
+.whatsapp-container p,
+.other-contact p{
+	    font-size: 18px;
+    font-weight: 600;
+}
+.whatsapp-btn{
+	border: 0;
+	border-radius: 0;
+    padding: 10px 15px;
+    font-size: 22px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    width: 162px;
+    margin: 45px auto 0;
+    background-color: rgb(69, 90, 100);
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+.whatsapp-btn:hover{
+	background-color: rgb(79, 102, 114);
+	color: #ffffff;
+}
+.whatsapp-btn span{
+	display: inline;
+	margin-right: 5px;
+}
+.whatsapp-btn img{
+	vertical-align: text-bottom;
+	width: 24px;
+}
+.other-contact{
+	padding-top: 50px;
+}
+.other-contact span{
+	display: inline-block;
+	font-size: 22px;
+	margin: 0px 30px;
+}
+.other-contact-link{
+    font-size: 22px;
+    color: #3B1606;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 25px;
+    -webkit-transition: background-color .35s ease-out;
+    -moz-transition: background-color .35s ease-out;
+    -o-transition: background-color .35s ease-out;
+    transition: background-color .35s ease-out;
+}
+.other-contact-link:hover,
+.other-contact-link:focus{
+    color: #d25924;
+    text-decoration: underline;
+}
+
+footer{
+	position: relative;
+	display: block;
+	width: 100%;
+	background: #000;
+	text-align: center;
+	padding: 25px 15px 20px;
+}
+footer .copyright{
+	font-size: 16px;
+    font-weight: 600;
+    color: #f2f2f2;
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+footer .copyright span{
+	font-size: 22px;
+	vertical-align: middle;
+}
+.footer-link{
+	display: block;
+	margin: 15px auto 10px;
+}
+.footer-link a,
+.footer-link span{
+	color: #f2f2f2;
+	font-size: 16px;
+	line-height: 1;
+	display: inline-block;
+}
+.footer-link span{
+	margin: 0 10px;
+	vertical-align: baseline;
+}
+.footer-link a{
+	-webkit-transition: color .5s ease-out;
+    -moz-transition: color .5s ease-out;
+    -o-transition: color .5s ease-out;
+    transition: color .5s ease-out;
+}
+.footer-link a:hover{
+	color: #ccc;
+}
+
+
+
+
+/* othher page CSS Starts */
+.inner-page-header{
+	padding: 0 !important;
+	position: relative;
+	width: 100%;
+	display: block;
+}
+.top-bar-black{
+	position: relative;
+	width: 100%;
+	padding: 12px 15px;
+	background: #161616;
+}
+.topbar-title{
+	font-size: 26px;
+	font-family: "KaushanScriptRegular";
+	text-align: center;
+}
+.topbar-title a{
+	color: #f2f2f2;
+	text-decoration: none;
+}
+.inner-banner-container{
+	position: relative;
+	width: 100%;
+}
+.inner-banner{
+	position: relative;
+    background: #ccc;
+    background-image: linear-gradient(rgba(22,22,22, .65) 0%, rgb(24 24 24 / 65%) 100%), url(../images/Inner-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inner-banner-title{
+	text-align: center;
+    font-size: 54px;
+    font-family: "KaushanScriptRegular";
+    color: #ffffff;
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+p.privacy-content{
+	text-align: left;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+p.privacy-content b{
+	font-size: 19px;
+}
+
+/* othher page CSS ends */
+
+/*Event Page Css starts */
+
+.new-event-alert{
+	font-size: 24px;
+    font-weight: 600;
+    margin: 0px auto 20px;
+    color: #59466e;
+    background-color: #f7f4ff;
+    padding: 15px;
+    border-radius: 10px;
+}
+.event-link{
+	display: inline-block;
+    color: #0f021d;
+    margin-left: 10px;
+}
+.event-link:hover{
+	text-decoration: underline;
+}
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 15px;
+    max-width: 300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #77777770;
+    -moz-box-shadow: 0 15px 10px #77777770;
+    box-shadow: 0 15px 10px #77777770;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+.event-box{
+	position: relative;
+	width: 100%;
+	font-weight: 600;
+	text-align: left;
+}
+
+.event-box .event-title{
+	font-size: 34px;
+	color: #3B1606;
+	margin: 20px 0px;
+}
+.event-box .event-title span{
+	font-size: 24px;
+	color: #3B1606;
+    font-family: 'JosefinSansVariableFont_semibold';
+	display: block;
+}
+.event-box .event-content{
+	font-size: 18px;
+}
+.event-box .event-content ul{
+	list-style: none;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0 0 0 40px;
+}
+.event-box .event-content ul li{
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 10px 0 10px 40px;
+}
+.event-box .event-content ul li i{
+	position: absolute;
+	font-size: 15px;
+	top: 15px;
+	left: 12px;
+}
+
+
+/*Event Page Css Ends */
+/* ----------------------- */
+/* ---- Media Queries ---- */
+/* ----------------------- */
+@media screen and (max-width: 1600px){
+	
+}
+@media screen and (max-width: 1200px){
+	.banner-title{
+		font-size: 72px;
+	}
+	.banner-container-fixed p.content{
+		font-size: 26px;
+	}
+	.banner-container-fixed a.banner_button{
+		font-size: 18px;		
+	}
+	.header-title{
+		padding: 15px 0px;
+		width: Calc(100% - 80px);
+		margin: 0px 40px;
+	}
+	.header-title a {
+	    font-size: 26px;
+	}
+	.topbar{
+		padding: 8px 30px;
+	}
+	.section-wrapper{
+		padding: 80px 0px;
+	}
+	.decorate-line{
+		margin-top: 56px;
+	}
+	.quote-box .decorate-line {
+	    margin: 36px auto 30px;
+	}
+	.quote-box .quote {
+	    font-size: 18px;
+	}
+	.quote-box .quote .author {
+	    font-size: 16px;
+	}
+	.section-title{
+		font-size: 38px;
+		margin-bottom: 50px;
+	}
+	p.section-content {
+	    font-size: 18px;
+	}
+	.category-box figcaption {
+	    padding: 18px;
+	}
+	.category-box figcaption::before {
+	    top: 18px;
+	    right: 8px;
+	    bottom: 18px;
+	    left: 8px;
+	}
+	.category-box figcaption::after {
+	    top: 8px;
+	    right: 18px;
+	    bottom: 8px;
+	    left: 18px;
+	}
+	.category-box figcaption .art-title{
+		font-size: 22px;
+		-webkit-transform: translate3d(0,80px,0);
+    	transform: translate3d(0,80px,0);
+	}
+	.category-box figcaption .art-detail{
+		font-size: 17px;
+		padding: 5px 15px;
+	}
+	.artist-box .artist-name{		
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	.artist-box .artist-content {
+		font-size: 16px;
+		min-height: 100px;
+	}
+	.artist-social a.social-icon{
+		font-size: 22px;
+		margin: 0 7px;
+	}
+	.quote-box.owener-quote {
+	    padding-top: 60px;
+	}
+	.quote-box.owener-quote .quote {
+	    font-size: 16px;
+	}
+	.team-box{
+		margin-top: 50px;
+	}
+	.team-box .team-name {
+	    font-size: 19px;
+	}
+	.whatsapp-btn{
+		padding: 8px 15px;
+		font-size: 18px;
+		width: 150px;
+		margin-top: 35px;
+	}
+	.whatsapp-container h3 {
+	    margin: 20px auto;
+	    font-size: 24px;
+	}
+
+	/* other page css starts */
+	.topbar-title {
+	    font-size: 24px;
+	}
+	.inner-banner-title {
+	    font-size: 48px;
+	    padding: 70px 0px;
+	}
+	/* Other page Css End*/
+
+	/*Event Page Css starts */
+	.event-box .event-title {
+	    font-size: 30px;
+	    margin: 0 0 15px;
+	}
+	.event-box .event-title span {
+	    font-size: 22px;
+	}
+	/*Event Page Css ends */
+}
+
+@media screen and (max-width: 1024px){
+	.topbar {
+	    padding: 8px 0px;
+	}
+	.header-title {
+	    width: Calc(100% - 30px);
+	    margin: 0px 15px;
+	}
+	.header-title a {
+	    font-size: 22px;
+	}
+	.banner-title {
+	    font-size: 56px;
+	}
+	.banner-container-fixed p.content {
+	    font-size: 22px;
+	}
+	.section-wrapper {
+	    padding: 50px 0px;
+	}
+	.section-title {
+	    font-size: 34px;
+	}
+	.decorate-line {
+	    margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.photo-box,
+	.category-box{
+		margin: 15px auto;
+	}
+	.category-box figcaption {
+	    padding: 30px;
+	}
+	.category-box figcaption::after {
+	    top: 15px;
+	    right: 30px;
+	    bottom: 15px;
+	    left: 30px;
+	}
+	.category-box figcaption::before {
+	    top: 30px;
+	    right: 15px;
+	    bottom: 30px;
+	    left: 15px;
+	}
+	.category-box figcaption .art-title {
+	    margin: 75px auto 0;
+	}
+	.photo-box figcaption{
+		    padding: 8px 0px;
+	}
+	.photo-box .art-title{
+		font-size: 18px;
+	}
+	.photo-box .description{
+		margin: 0;
+		font-size: 16px;
+	}
+	.team-box {
+	    margin-top: 15px;
+	}
+	.quote-box.owener-quote {
+	    padding: 50px 0px 0px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	/* other page css starts */
+	p.privacy-content{
+		font-size: 15px;
+	}
+	p.privacy-content b{
+		font-size: 16px;
+	}
+
+	/*Event Page Css starts */
+	.event-box .event-title {
+	    font-size: 26px;
+	}
+	.event-box .event-title span {
+	    font-size: 18px;
+	}
+	.event-box .event-content ul{
+		padding-left: 0;
+	}
+	/*Event Page Css ends */
+}
+
+@media screen and (max-width: 640px) {
+	/* other page css starts */
+	.topbar-title {
+	    font-size: 20px;
+	}
+	.inner-banner-title {
+	    font-size: 38px;
+	    padding: 60px 0px;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	/* other page css starts */
+	.topbar-title {
+	    font-size: 17px;
+	}
+	.inner-banner-title {
+	    font-size: 30px;
+	    padding: 52px 0px;
+	}
+	/* other page css ends */
+
+
+
+	.other-contact span {
+	    display: none;
+	}
+	.other-contact-link{
+		display: block;
+	}
+	
+}
+
+@media screen and (max-width: 360px) {}
