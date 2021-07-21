@@ -1,0 +1,36 @@
+/*   CSS for parrelex demo */
+/* CSS */
+body {
+	font-family: arial, sans-serif, verdana;
+	width:5000px;
+	color:white;
+	margin:0;
+	padding:0;
+}
+#home { 
+	background: url('../img/example_parallax_l1.gif');
+	background-position: fixed;
+	background-repeat: repeat-x;	
+	background-size: cover;
+	background-position: top left;
+	/*min-height: 1000px;*/
+	/*height: 1000px; */
+	/*margin: 0 auto; */
+	width: 100%; 
+	position: relative; 
+	top: 0;
+	left: 0;
+	box-shadow: none;
+}
+#home article { 
+  position: absolute; 
+  text-align: center; 
+  font-size: 65px;
+  text-shadow: 2px 7px 5px #222;
+  font-family: 'arial';
+  top: 10%; 
+  width: 100%; 
+  z-index: 999;
+  color: #d40808;
+}
+ 
