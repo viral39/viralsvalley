@@ -903,6 +903,28 @@ p.privacy-content b{
 
 /* othher page CSS ends */
 
+
+ul{
+	list-style: none;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0px;
+}
+ul li{
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+ul li i{
+	position: absolute;
+	font-size: 15px !important;
+	top: 15px;
+	left: 12px;
+}
+
+
 /*Event Page Css starts */
 
 .new-event-alert{
@@ -978,28 +1000,90 @@ p.privacy-content b{
 	font-size: 18px;
 }
 .event-box .event-content ul{
-	list-style: none;
-	position: relative;
-	width: 100%;
-	margin: 0;
 	padding: 0 0 0 40px;
 }
 .event-box .event-content ul li{
-	position: relative;
-	display: block;
-	width: 100%;
 	margin: 0;
 	padding: 10px 0 10px 40px;
 }
-.event-box .event-content ul li i{
+/*.event-box .event-content ul li i{
 	position: absolute;
 	font-size: 15px;
 	top: 15px;
 	left: 12px;
-}
+}*/
+
 
 
 /*Event Page Css Ends */
+
+/*Product Detail Page Css Starts */
+
+.product-container{
+	position: relative;
+	float: left;
+	width: 100%;
+	display: block;
+	/*border: 1px solid;*/
+	text-align: left;
+	font-weight: 600;
+}
+.product-image-wrap{
+	float: left;
+    width: calc(100% - 50px);
+    position: relative;
+    display: block;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    overflow: hidden;
+}
+.product-image{
+	width: 100%;
+}
+
+.product-container .product-title{
+	font-size: 34px;
+    color: #3B1606;
+    margin: 0 0 10px;
+    line-height: 1;
+}
+.product-container .product-catagory{
+	font-size: 18px;
+    color: #3B1606;
+    font-family: 'JosefinSansVariableFont_semibold';
+    display: block;
+    margin-bottom: 20px;
+}
+.product-container .product-details{
+	font-size: 16px;
+}
+.product-container .product-desc{
+	font-size: 16px;
+	margin: 20px 0px;
+}
+.product-container ul li{
+	padding: 10px 0px 10px 40px;
+	line-height: 1;
+}
+.product-container ul li>i{
+	top: 10px;
+	left: 8px;
+}
+.artist-name{
+	font-size: 13px;
+}
+.order-btn{
+	float: left;
+    font-size: 18px;
+    line-height: 1;
+    margin: 20px 0px;
+}
+/*Product Detail Page Css Ends */
+
+
+
+
+
 /* ----------------------- */
 /* ---- Media Queries ---- */
 /* ----------------------- */
