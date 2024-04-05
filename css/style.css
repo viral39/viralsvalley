@@ -944,6 +944,37 @@ ul li i{
 .event-link:hover{
 	text-decoration: underline;
 }
+.event-banner{
+    display: block;
+    border: 1px solid #ddd;
+    padding: 20px;
+	float: left;
+    width: 100%;
+	text-align: left;
+}
+.event-banner .artwork-img{
+	float: left;
+	width: 200px;
+	margin-right: 20px;
+}
+.event-info{
+	float: left;
+    display: inline-block;
+}
+.event-info h3{
+    font-size: 24px;
+	text-align: left;
+	font-weight: 900;
+    margin-bottom: 10px;
+}
+.event-link-more{
+    padding: 20px 10px;
+    border: 1px solid;
+    display: block;
+    width: 124px;
+    text-align: center;
+}
+
 .effect2
 {
   position: relative;
